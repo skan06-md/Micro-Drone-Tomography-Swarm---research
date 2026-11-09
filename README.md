@@ -41,10 +41,13 @@ python experiments/run_week1.py --only e3 e6 # just some experiments
 | E2 | What do the images look like: 6-drone snapshot vs 36-drone snapshot vs 6 drones sweeping while they orbit? | `e2_point_spread.png`, `e2_gallery_*.png` |
 | E3 | Detection vs shell transmission | `e3_pd_vs_shell.png` |
 | E4 | Detection vs signal-to-noise ratio | `e4_pd_vs_snr.png` |
-| E5 | Detection vs number of drones | `e5_pd_vs_drones.png` |
+| E5 | Detection vs number of drones (**inconclusive**: depends on ring geometry, see findings) | `e5_pd_vs_drones.png` |
 | E6 | How precisely must each drone know its own position? | `e6_pd_vs_position_error.png` |
 
-See **[docs/week1_findings.md](docs/week1_findings.md)** for the results.
+**Headline result:** a hidden 3 cm block is detectable through plastic shells but not
+through carbon-filled/carbon-fibre or metal shells, and coherent imaging needs each
+drone to know its position to about 0.1 mm. Full results, limits and sources:
+**[docs/week1_findings.md](docs/week1_findings.md)**.
 
 ## Model assumptions (read before trusting numbers)
 

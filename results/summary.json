@@ -1,0 +1,232 @@
+{
+  "config": {
+    "f_center_GHz": 77,
+    "bandwidth_GHz": 4,
+    "n_freq": 64,
+    "orbit_radius_m": 3,
+    "block_size_cm": 3,
+    "trials_per_hypothesis": 60,
+    "pfa": 0.05
+  },
+  "E1_materials": [
+    {
+      "material": "Polypropylene (PP)",
+      "one_way_T_dB": -0.66,
+      "two_way_interior_loss_dB": -1.33,
+      "shell_reflection_amp": 0.374,
+      "source": "eps: radar-cover patent table @76.5 GHz; tan_d assumed"
+    },
+    {
+      "material": "ABS",
+      "one_way_T_dB": -0.88,
+      "two_way_interior_loss_dB": -1.77,
+      "shell_reflection_amp": 0.388,
+      "source": "eps: radar-cover patent table @76.5 GHz; tan_d assumed (ABS is a lossy plastic)"
+    },
+    {
+      "material": "Polycarbonate (PC)",
+      "one_way_T_dB": -0.7,
+      "two_way_interior_loss_dB": -1.39,
+      "shell_reflection_amp": 0.341,
+      "source": "eps: radar-cover patent table; tan_d assumed"
+    },
+    {
+      "material": "PEI",
+      "one_way_T_dB": -0.54,
+      "two_way_interior_loss_dB": -1.08,
+      "shell_reflection_amp": 0.317,
+      "source": "Avient PREPERM bulletin @77 GHz"
+    },
+    {
+      "material": "PBT + glass fibre",
+      "one_way_T_dB": -0.99,
+      "two_way_interior_loss_dB": -1.98,
+      "shell_reflection_amp": 0.061,
+      "source": "Avient PREPERM bulletin @77 GHz (eps 3.5-4.2)"
+    },
+    {
+      "material": "PBT + carbon-fibre filler",
+      "one_way_T_dB": -15.0,
+      "two_way_interior_loss_dB": -30.0,
+      "shell_reflection_amp": 0.8,
+      "source": "patent: <3% transmission 75-110 GHz"
+    },
+    {
+      "material": "CFRP laminate (assumed)",
+      "one_way_T_dB": -30.0,
+      "two_way_interior_loss_dB": -60.0,
+      "shell_reflection_amp": 0.8,
+      "source": "assumed; real laminates are typically worse"
+    },
+    {
+      "material": "Aluminium / metal",
+      "one_way_T_dB": -200.0,
+      "two_way_interior_loss_dB": -400.0,
+      "shell_reflection_amp": 1.0,
+      "source": "conductor: effectively opaque"
+    }
+  ],
+  "E3_shell": {
+    "T_dB": [
+      0,
+      -3,
+      -6,
+      -10,
+      -15,
+      -20,
+      -25,
+      -30
+    ],
+    "pd": {
+      "coherent, block reflectivity 1.0": [
+        1.0,
+        1.0,
+        1.0,
+        0.2,
+        0.05,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "coherent, block reflectivity 0.3": [
+        1.0,
+        0.45,
+        0.11666666666666667,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "incoherent, block reflectivity 1.0": [
+        1.0,
+        1.0,
+        0.6,
+        0.08333333333333333,
+        0.06666666666666667,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "incoherent, block reflectivity 0.3": [
+        0.9166666666666666,
+        0.3,
+        0.06666666666666667,
+        0.06666666666666667,
+        0.05,
+        0.05,
+        0.05,
+        0.06666666666666667
+      ]
+    }
+  },
+  "E5_nodes": {
+    "n_drones": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      12
+    ],
+    "pd": {
+      "coherent": [
+        0.43333333333333335,
+        0.9166666666666666,
+        0.2833333333333333,
+        0.38333333333333336,
+        0.8333333333333334,
+        0.48333333333333334
+      ],
+      "incoherent": [
+        0.23333333333333334,
+        0.6,
+        0.08333333333333333,
+        0.4666666666666667,
+        0.55,
+        0.3
+      ]
+    }
+  },
+  "E4_snr": {
+    "snr_db": [
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0
+    ],
+    "pd": {
+      "5 drones": [
+        0.1,
+        0.11666666666666667,
+        0.15,
+        0.2833333333333333,
+        0.7666666666666667,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "6 drones": [
+        0.03333333333333333,
+        0.06666666666666667,
+        0.11666666666666667,
+        0.38333333333333336,
+        0.95,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "8 drones": [
+        0.1,
+        0.11666666666666667,
+        0.35,
+        0.8333333333333334,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "E6_position": {
+    "pos_err_mm": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0
+    ],
+    "pd": {
+      "coherent": [
+        1.0,
+        0.6666666666666666,
+        0.26666666666666666,
+        0.13333333333333333,
+        0.1,
+        0.1,
+        0.26666666666666666,
+        0.1,
+        0.0
+      ],
+      "incoherent": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.7,
+        0.13333333333333333,
+        0.0
+      ]
+    }
+  }
+}
