@@ -1,0 +1,37 @@
+{
+  "N6_err0.1": {
+    "n_drones": 6,
+    "err_mm": 0.1,
+    "pd_coherent": 1.0,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N6_err0.25": {
+    "n_drones": 6,
+    "err_mm": 0.25,
+    "pd_coherent": 0.13333333333333333,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N6_err0.5": {
+    "n_drones": 6,
+    "err_mm": 0.5,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N6_err1.0": {
+    "n_drones": 6,
+    "err_mm": 1.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N6_err2.0": {
+    "n_drones": 6,
+    "err_mm": 2.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  }
+}

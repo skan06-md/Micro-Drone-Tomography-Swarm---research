@@ -1,0 +1,30 @@
+{
+  "N4_err0.25": {
+    "n_drones": 4,
+    "err_mm": 0.25,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N4_err1.0": {
+    "n_drones": 4,
+    "err_mm": 1.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N12_err0.25": {
+    "n_drones": 12,
+    "err_mm": 0.25,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N12_err1.0": {
+    "n_drones": 12,
+    "err_mm": 1.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  }
+}

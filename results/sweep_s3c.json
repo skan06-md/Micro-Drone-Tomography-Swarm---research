@@ -1,0 +1,23 @@
+{
+  "N6_err5.0": {
+    "n_drones": 6,
+    "err_mm": 5.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N6_err10.0": {
+    "n_drones": 6,
+    "err_mm": 10.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 1.0,
+    "trials": 30
+  },
+  "N6_err20.0": {
+    "n_drones": 6,
+    "err_mm": 20.0,
+    "pd_coherent": 0.06666666666666667,
+    "pd_incoherent": 0.16666666666666666,
+    "trials": 30
+  }
+}
